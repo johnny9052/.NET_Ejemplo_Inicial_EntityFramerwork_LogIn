@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EjercicioFramework" Class="DeptarmaentoProceduresDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KAKASHISITO\SQLEXPRESS2;Initial Catalog=EjercicioFramework;User ID=sa;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="DataLayer.Properties.Settings" SettingsPropertyName="EjercicioFrameworkConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.guardarDepartamento" Method="guardarDepartamento">
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.listarDepartamento" Method="listarDepartamento">
+    <ElementType Name="listarDepartamentoResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(56) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
